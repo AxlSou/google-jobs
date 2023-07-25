@@ -5,7 +5,9 @@ import SearchContext from '../../context/SearchContext'
 export default function PostList() {
   const { searchParams } = useContext(SearchContext)
 
-  return searchParams.data.slice(0, 5).map((post, i) => {
+  console.log(searchParams)
+
+  return searchParams.data.slice(searchParams.firstIndex, searchParams.lastIndex).map((post, i) => {
     return (
       <JobPost
         key={i}
