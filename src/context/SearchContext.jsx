@@ -7,9 +7,12 @@ export function SearchContextProvider({ children }) {
     const [searchParams, setSearchParams] = React.useState({
         location: 'London',
         employmentType: 'FULLTIME',
-        currentQuery: '',
+        currentQuery: 'Web Developer',
         data: samples,
         currentPage: 1,
+        apiPage: 1,
+        firstIndex: 0,
+        lastIndex: 5,
     })
 
     return (
