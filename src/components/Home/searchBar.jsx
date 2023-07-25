@@ -8,8 +8,8 @@ export default function SearchBar() {
   const { searchParams, setSearchParams } = useContext(SearchContext)
 
   const handleSearch = async () => {
-    const data = getJobsList(searchParams)
-    setSearchParams(data)
+    const data = await getJobsList(searchParams)
+    setSearchParams({ ...searchParams, data: data, currentPage: 1, apiPage: 1 })
   }
 
   return (
