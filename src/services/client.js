@@ -2,8 +2,8 @@ const URL_API_JOBS = `https://jsearch.p.rapidapi.com/search?query=`;
 const OPTIONS = {
   method: 'GET',
   headers: {
-    'X-RapidAPI-Key': '41c18fdf26msh8b4dc70566cffdcp1c02f4jsnacd95146fdb7',
-    'X-RapidAPI-Host': 'jsearch.p.rapidapi.com'
+    'X-RapidAPI-Key': process.env.RAPIDAPI_KEY,
+    'X-RapidAPI-Host': process.env.RAPIDAPI_HOST
   }
 };
 
