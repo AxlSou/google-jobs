@@ -7,7 +7,11 @@ export default {
   theme: {
     container: {
       center: true,
-      padding: '120px'
+      padding: {
+        DEFAULT: '2rem',
+        lg: '10rem',
+      },
+
     },
     fontFamily: {
       'poppins': ['"Poppins"', 'serif'],
@@ -15,7 +19,7 @@ export default {
       
     },
     backgroundImage: {
-      'backgroundImg': "url('../assets/backgroundImg.png')"
+      'backgroundImg': "url('../assets/backgroundImg.png')",
     },
     extend: {
       colors:{

@@ -9,7 +9,7 @@ export default function Home() {
       <nav className='searchBar mt-12 h-40'>
         <SearchBar />
       </nav>
-      <main className='mt-12 grid grid-cols-[400px,1fr] gap-4'>
+      <main className='mt-12 grid lg:grid-cols-[400px,1fr] gap-4 grid-cols-1'>
         <SideBar />
         <section>
           <PostList />

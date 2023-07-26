@@ -9,7 +9,7 @@ export default function PostDetails() {
   const navigate = useNavigate()
 
   return (
-    <div key={post.employer_name} className='mt-12 grid grid-cols-[400px,1fr] gap-4 pb-24'>
+    <div key={post.employer_name} className='mt-12 grid lg:grid-cols-[400px,1fr] lg:gap-4 gap-16 pb-24'>
       <aside>
         <div className='flex items-center gap-4 hover:cursor-pointer' onClick={() => navigate('/')}>
           <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" className='fill-primaryBlue rotate-180'>
@@ -31,9 +31,9 @@ export default function PostDetails() {
       </aside >
       <section className='flex flex-col gap-8'>
         <header className='flex flex-col gap-2'>
-          <div className='flex items-center gap-6'>
-            <h1 className='text-secondaryBlue text-2xl font-bold font-roboto'>{post.job_title}</h1>
-            <span className='text-xs font-roboto font-bold text-secondaryBlue tracking-tight border-1 border-secondaryBlue rounded-md px-2 py-2 w-16 h-7 text-center flex items-center justify-center'>
+          <div className='lg:flex items-center gap-6'>
+            <h1 className='text-secondaryBlue text-2xl font-bold font-roboto mb-2 lg:mb-0'>{post.job_title}</h1>
+            <span className='text-xs font-roboto font-bold text-secondaryBlue tracking-tight border-1 border-secondaryBlue rounded-md w-16 h-7 mb-2 lg:mb-0 text-center flex items-center justify-center'>
               Full time
             </span>
           </div>

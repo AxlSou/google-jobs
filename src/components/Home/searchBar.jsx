@@ -13,8 +13,8 @@ export default function SearchBar() {
   }
 
   return (
-    <div className='imageContainer w-full h-full rounded-xl grid place-items-center'>
-      <div className="relative rounded-md shadow-sm w-4/6 h-1/3 grid">
+    <div className='imageContainer bg-cover bg-center w-full h-full rounded-xl grid place-items-center'>
+      <div className="relative rounded-md shadow-sm w-5/6 lg:w-4/6 h-1/3 grid bg-white">
         <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-4">
           <span>
             <svg className='fill-primaryGray' xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20">
@@ -26,12 +26,12 @@ export default function SearchBar() {
           type="text"
           name="price"
           id="price"
-          className="block h-full w-full rounded-md border-0 py-1 pl-12 pr-20 text-gray-900 font-roboto placeholder:text-grayPlaceHolder focus:border-transparent focus:outline-none sm:text-sm sm:leading-6"
+          className="block h-full w-11/12 rounded-md border-0 py-1 pl-12 pr-20 truncate text-gray-900 font-roboto placeholder:text-grayPlaceHolder placeholder:text-sm focus:border-transparent focus:outline-none sm:text-sm sm:leading-6"
           placeholder="Title, companies, expertise or benefits"
           onChange={(e) => setSearchParams({ ...searchParams, currentQuery: e.target.value })}
         />
         <button
-          className='absolute mr-1 h-5/6 w-36 bg-primaryBlue text-white font-medium font-roboto rounded-md self-center place-self-end'
+          className='absolute mr-1 h-5/6 lg:w-36 w-20 bg-primaryBlue text-white font-medium font-roboto rounded-md self-center place-self-end'
           onClick={() => handleSearch(searchParams)}>
           Search
         </button>

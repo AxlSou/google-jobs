@@ -31,7 +31,7 @@ export default function Pages() {
   }
 
   return (
-    <div className='flex gap-2 justify-end'>
+    <div className='flex gap-2 justify-end mb-4'>
       <div className='border group border-primaryGray rounded-md w-9 h-9 flex items-center justify-center font-roboto text-xs text-primaryGray hover:border-primaryBlue' onClick={handlePrevPage}>
         <svg className='fill-primaryGray group-hover:fill-primaryBlue' xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20">
           <path d="M561-234.261 314.261-481 561-727.739 609.739-679l-198 198 198 198L561-234.261Z" />
